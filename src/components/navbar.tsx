@@ -15,6 +15,7 @@ interface NavItemProps {
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
+      {/* @ts-ignore */}
       <Typography
         as="a"
         href={href || "#"}
@@ -58,14 +59,19 @@ export function Navbar() {
   }, []);
 
   return (
+    
     <MTNavbar
       fullWidth
       shadow={false}
       blurred={false}
       color={isScrolling ? "white" : "transparent"}
       className="fixed top-0 z-50 border-0"
+      placeholder={undefined}
+      onPointerEnterCapture={undefined}
+      onPointerLeaveCapture={undefined}
     >
       <div className="container mx-auto flex items-center justify-between">
+        {/* @ts-ignore */}
         <Typography
           className="tracking-widest"
           as="a"
@@ -88,6 +94,7 @@ export function Navbar() {
    
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
+          {/* @ts-ignore */}
           <IconButton
             variant="text"
             color={isScrolling ? "gray" : "white"}
@@ -95,6 +102,7 @@ export function Navbar() {
           >
             <i className="fa-brands fa-twitter text-base" />
           </IconButton>
+          {/* @ts-ignore */}
           <IconButton
             variant="text"
             color={isScrolling ? "gray" : "white"}
@@ -102,6 +110,7 @@ export function Navbar() {
           >
             <i className="fa-brands fa-facebook text-base" />
           </IconButton>
+          {/* @ts-ignore */}
           <IconButton
             variant="text"
             color={isScrolling ? "gray" : "white"}
@@ -111,6 +120,7 @@ export function Navbar() {
           </IconButton>
        
         </div>
+        {/* @ts-ignore */}
         <IconButton
           variant="text"
           color={isScrolling ? "gray" : "white"}
@@ -135,12 +145,15 @@ export function Navbar() {
             </NavItem>
           </ul>
           <div className="mt-4 flex items-center gap-2">
+            {/* @ts-ignore */}
             <IconButton variant="text" color="gray" size="sm">
               <i className="fa-brands fa-twitter text-base" />
             </IconButton>
+            {/* @ts-ignore */}
             <IconButton variant="text" color="gray" size="sm">
               <i className="fa-brands fa-facebook text-base" />
             </IconButton>
+            {/* @ts-ignore */}
             <IconButton variant="text" color="gray" size="sm">
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
