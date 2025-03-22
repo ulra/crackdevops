@@ -62,7 +62,7 @@ export default function Home() {
                     </div>
                     <p className="text-gray-700">
                     Creamos pipelines CI/CD personalizados, establecemos métricas clave (SLI, SLO, SLA).
-                    Practicamos resiliencia mediante "Game Days" y caos intencional.
+                    Practicamos resiliencia mediante &quot;Game Days&quot; y caos intencional.
 
                     </p>
                 </div>
