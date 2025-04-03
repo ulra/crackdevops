@@ -1,3 +1,8 @@
+/* eslint-disable react/jsx-no-undef */
+/* eslint-disable react/jsx-no-comment-textnodes */
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Exito() {
     return (
         <>
@@ -11,12 +16,10 @@ export default function Exito() {
                 Descubre cómo hemos transformado negocios con soluciones innovadoras y resultados tangibles.
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center gap-6">
-                <button className="bg-gradient-to-r from-red-600 to-orange-600 text-white px-10 py-5 rounded-full hover:scale-105 transition-all shadow-lg">
-                    Ver Todos los Casos <i className="fas fa-arrow-right ml-3"></i>
-                </button>
-                <button className="bg-white text-black px-10 py-5 rounded-full hover:bg-gray-100 transition-all border border-gray-300">
+
+                <Link href='/contacto' className="bg-white text-black px-10 py-5 rounded-full hover:bg-gray-100 transition-all border border-gray-300">
                     Contáctanos para un Caso Personalizado <i className="fas fa-envelope ml-3"></i>
-                </button>
+                </Link>
             </div>
         </div>
     </section>
@@ -26,10 +29,14 @@ export default function Exito() {
         <div className="container mx-auto px-4">
             <div className="space-y-12">
                 {/* Caso 1: Migración y Modernización */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 items-center">
                     <div>
-                        <img 
-                            src="https://source.unsplash.com/600x400/?migration,technology" 
+
+                        
+                        
+                        <Image
+                            width={400} height={400}
+                            src="/image/migracion.png" 
                             alt="Migración y Modernización" 
                             className="rounded-3xl shadow-2xl hover:scale-105 transition-transform"
                         />
@@ -49,7 +56,7 @@ export default function Exito() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div className="order-2 md:order-1">
                         <h3 className="text-3xl font-semibold mb-4 text-gray-800 flex items-center">
-                            <i className="fas fa-code-branch text-blue-600 mr-4"></i>
+                            <i className="fas fa-code-branch text-red-600 mr-4"></i>
                             Reducción de Deuda Técnica
                         </h3>
                         <p className="text-gray-600">
@@ -57,8 +64,9 @@ export default function Exito() {
                         </p>
                     </div>
                     <div className="order-1 md:order-2">
-                        <img 
-                            src="https://source.unsplash.com/600x400/?automation,legacy-systems" 
+                        <Image 
+                            width={400} height={400}
+                            src='/image/reduccion.png' 
                             alt="Reducción de Deuda Técnica" 
                             className="rounded-3xl shadow-2xl hover:scale-105 transition-transform"
                         />
@@ -68,15 +76,16 @@ export default function Exito() {
                 {/* Caso 3: Optimización y Reducción de Costos */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <img 
-                            src="https://source.unsplash.com/600x400/?ci-cd,pipeline" 
+                    <Image 
+                            width={400} height={400}
+                            src='/image/optimizacion.png' 
                             alt="Optimización y Reducción de Costos" 
                             className="rounded-3xl shadow-2xl hover:scale-105 transition-transform"
                         />
                     </div>
                     <div>
                         <h3 className="text-3xl font-semibold mb-4 text-gray-800 flex items-center">
-                            <i className="fas fa-chart-line text-green-600 mr-4"></i>
+                            <i className="fas fa-chart-line text-red-600 mr-4"></i>
                             Optimización y Reducción de Costos
                         </h3>
                         <p className="text-gray-600">
@@ -89,7 +98,7 @@ export default function Exito() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div className="order-2 md:order-1">
                         <h3 className="text-3xl font-semibold mb-4 text-gray-800 flex items-center">
-                            <i className="fas fa-brain text-purple-600 mr-4"></i>
+                            <i className="fas fa-brain text-red-600 mr-4"></i>
                             Implementación de Inteligencia Artificial
                         </h3>
                         <p className="text-gray-600">
@@ -97,9 +106,10 @@ export default function Exito() {
                         </p>
                     </div>
                     <div className="order-1 md:order-2">
-                        <img 
-                            src="https://source.unsplash.com/600x400/?artificial-intelligence,machine-learning" 
-                            alt="Inteligencia Artificial" 
+                    <Image 
+                            width={400} height={400}
+                            src='/image/IA.png' 
+                            alt="Implementación de Inteligencia Artificial" 
                             className="rounded-3xl shadow-2xl hover:scale-105 transition-transform"
                         />
                     </div>
@@ -117,7 +127,7 @@ export default function Exito() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Caso de Uso 1: Fusiones y Adquisiciones */}
                 <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow flex items-center gap-6">
-                    <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center">
                         <i className="fas fa-building fa-2x text-white"></i>
                     </div>
                     <div>
@@ -143,7 +153,7 @@ export default function Exito() {
 
                 {/* Caso de Uso 3: Transformación Digital Profunda */}
                 <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow flex items-center gap-6">
-                    <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center">
                         <i className="fas fa-digital-tachograph fa-2x text-white"></i>
                     </div>
                     <div>
@@ -156,7 +166,7 @@ export default function Exito() {
 
                 {/* Caso de Uso 4: Escalabilidad y Optimización */}
                 <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-shadow flex items-center gap-6">
-                    <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full flex items-center justify-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center">
                         <i className="fas fa-chart-line fa-2x text-white"></i>
                     </div>
                     <div>

@@ -1,5 +1,7 @@
 
+import Link from "next/link";
 import { AiFillDownCircle, AiFillDollarCircle, AiFillDatabase } from "react-icons/ai";
+import Exito from "./exito/page";
 
 
 export default function Home() {
@@ -197,9 +199,9 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-16">
-                <button className="bg-gradient-to-r from-black to-gray-800 text-white px-12 py-5 rounded-full hover:scale-105 transition-all shadow-lg">
+                <Link href='/exito'   className="bg-gradient-to-r from-black to-gray-800 text-white px-12 py-5 rounded-full hover:scale-105 transition-all shadow-lg">
                     Ver casos de éxito <i className="fas fa-rocket ml-3"></i>
-                </button>
+                </Link>
             </div>
         </div>
     </section>
@@ -253,9 +255,9 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-16">
-                <button className="bg-gradient-to-r from-black to-gray-800 text-white px-12 py-5 rounded-full hover:scale-105 transition-all shadow-lg">
+                <Link href='/servicios' className="bg-gradient-to-r from-black to-gray-800 text-white px-12 py-5 rounded-full hover:scale-105 transition-all shadow-lg">
                     Saber mas<i className="fas fa-arrow-right ml-3"></i>
-                </button>
+                </Link>
             </div>
         </div>
     </section>
@@ -270,12 +272,10 @@ export default function Home() {
                     ¡Contáctanos y potencia tu crecimiento empresarial!
                 </p>
                 <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-                    <button className="bg-red-600 text-white px-10 py-5 rounded-full hover:scale-105 transition-all shadow-lg">
+                    <Link href='/contacto' className="bg-red-600 text-white px-10 py-5 rounded-full hover:scale-105 transition-all shadow-lg">
                         Contáctanos <i className="fas fa-arrow-right ml-3"></i>
-                    </button>
-                    <button className="bg-white text-black px-10 py-5 rounded-full hover:bg-gray-100 transition-all border border-gray-300">
-                        Ver más información <i className="fas fa-info-circle ml-3"></i>
-                    </button>
+                    </Link>
+
                 </div>
             </div>
         </div>

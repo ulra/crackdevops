@@ -1,3 +1,9 @@
+import Image from "next/image";
+import IA from '../../../public/image/IA.png'
+import Devops from '../../../public/image/DEvops.png'
+import CloudNative from '../../../public/image/cloudNative.png'
+import Link from "next/link";
+
 export default function Servicios () {
     return (
         <div>
@@ -10,12 +16,12 @@ export default function Servicios () {
                 Desde la implementación de arquitecturas Cloud Native hasta la integración de Inteligencia Artificial, te acompañamos en cada paso para potenciar tu negocio.
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center gap-6">
-                <button className="bg-gradient-to-r from-red-600 to-orange-600 text-white px-10 py-5 rounded-full hover:scale-105 transition-all shadow-lg">
+                <Link href='/contacto' className="bg-gradient-to-r from-red-600 to-orange-600 text-white px-10 py-5 rounded-full hover:scale-105 transition-all shadow-lg">
                     Contáctanos <i className="fas fa-arrow-right ml-3"></i>
-                </button>
-                <button className="bg-white text-black px-10 py-5 rounded-full hover:bg-gray-100 transition-all border border-gray-300">
+                </Link>
+                <Link href='/exito' className="bg-white text-black px-10 py-5 rounded-full hover:bg-gray-100 transition-all border border-gray-300">
                     Ver Casos de Éxito <i className="fas fa-trophy ml-3"></i>
-                </button>
+                </Link>
             </div>
         </div>
     </section>
@@ -23,9 +29,9 @@ export default function Servicios () {
    
         {/* Seccion nuestros servicios */}
 
-        <section className="bg-gray-50 px-20">
+        <section className="bg-gray-50 px-20 pb-10">
         <div className="container mx-auto px-4">
-            <h2 className="text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700 px-20">
+            <h2 className="pt-12 text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700 px-20">
                 Nuestros Servicios
             </h2>
 
@@ -33,15 +39,16 @@ export default function Servicios () {
                 {/* Servicio 1: Ingeniería de Plataformas y Cloud Native */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <img 
-                            src="https://source.unsplash.com/600x400/?cloud,kubernetes" 
+                        <Image
+                            width={400} height={400}
+                            src="/image/CloudNative.png"
                             alt="Ingeniería de Plataformas y Cloud Native" 
                             className="rounded-3xl shadow-2xl hover:scale-105 transition-transform"
                         />
                     </div>
                     <div>
                         <h3 className="text-3xl font-semibold mb-4 text-gray-800 flex items-center">
-                            <i className="fas fa-cloud fa-lg text-blue-600 mr-4"></i>
+                            <i className="fas fa-cloud fa-lg text-red-600 mr-4"></i>
                             Ingeniería de Plataformas y Cloud Native
                         </h3>
                         <ul className="list-disc ml-6 text-gray-600 space-y-2">
@@ -56,7 +63,7 @@ export default function Servicios () {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div className="order-2 md:order-1">
                         <h3 className="text-3xl font-semibold mb-4 text-gray-800 flex items-center">
-                            <i className="fas fa-cogs fa-lg text-green-600 mr-4"></i>
+                            <i className="fas fa-cogs fa-lg text-red-600 mr-4"></i>
                             Consultoría DevOps, SRE y DevSecOps
                         </h3>
                         <ul className="list-disc ml-6 text-gray-600 space-y-2">
@@ -66,8 +73,9 @@ export default function Servicios () {
                         </ul>
                     </div>
                     <div className="order-1 md:order-2">
-                        <img 
-                            src="https://source.unsplash.com/600x400/?devops,pipeline" 
+                        <Image
+                            width={400} height={400}
+                            src="/image/DEvops.png"
                             alt="Consultoría DevOps, SRE y DevSecOps" 
                             className="rounded-3xl shadow-2xl hover:scale-105 transition-transform"
                         />
@@ -77,15 +85,16 @@ export default function Servicios () {
                 {/* Servicio 3: Servicios Avanzados de IA y MLOps */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <img 
-                            src="https://source.unsplash.com/600x400/?ai,machine-learning" 
+                        <Image
+                            width={400} height={400}
+                            src="/image/IA.png"
                             alt="Servicios Avanzados de IA y MLOps" 
                             className="rounded-3xl shadow-2xl hover:scale-105 transition-transform"
                         />
                     </div>
                     <div>
                         <h3 className="text-3xl font-semibold mb-4 text-gray-800 flex items-center">
-                            <i className="fas fa-brain fa-lg text-purple-600 mr-4"></i>
+                            <i className="fas fa-brain fa-lg text-red-600 mr-4"></i>
                             Servicios Avanzados de IA y MLOps
                         </h3>
                         <ul className="list-disc ml-6 text-gray-600 space-y-2">
@@ -110,10 +119,11 @@ export default function Servicios () {
                         </ul>
                     </div>
                     <div className="order-1 md:order-2">
-                        <img 
-                            src="https://source.unsplash.com/600x400/?digital-transformation,modernization" 
+                        <Image 
+                            width={400} height={400}
+                            src="/image/Contenedores.png" 
                             alt="Transformación Digital y Modernización de Legado" 
-                            className="rounded-3xl shadow-2xl hover:scale-105 transition-transform"
+                            className="rounded-3xl shadow-2xl hover:scale-105 transition-transform p-4 justify-end"
                         />
                     </div>
                 </div>

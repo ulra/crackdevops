@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Planes(){
     return(
         <>
@@ -10,12 +12,12 @@ export default function Planes(){
             Detalla productos atractivos con diferentes niveles de complejidad y valor agregado
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center gap-6">
-                <button className="bg-gradient-to-r from-red-600 to-orange-600 text-white px-10 py-5 rounded-full hover:scale-105 transition-all shadow-lg">
-                    Ver Todos los Planes <i className="fas fa-arrow-right ml-3"></i>
-                </button>
-                <button className="bg-white text-black px-10 py-5 rounded-full hover:bg-gray-100 transition-all border border-gray-300">
+                <Link href='./servicios' className="bg-gradient-to-r from-red-600 to-orange-600 text-white px-10 py-5 rounded-full hover:scale-105 transition-all shadow-lg">
+                    Consulta nuestro servicios <i className="fas fa-arrow-right ml-3"></i>
+                </Link>
+                <Link href='./contacto' className="bg-white text-black px-10 py-5 rounded-full hover:bg-gray-100 transition-all border border-gray-300">
                     Contáctanos para Personalizar <i className="fas fa-envelope ml-3"></i>
-                </button>
+                </Link>
             </div>
         </div>
     </section>

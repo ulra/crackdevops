@@ -89,6 +89,7 @@ export function Navbar() {
         >
           <NavItem href="/">Home</NavItem>
           <NavItem href="/servicios">Servicios</NavItem>
+          <NavItem href="/exito">Casos de exito</NavItem>
           <NavItem href="/planes">Planes</NavItem>
           <NavItem href="/contacto">Contacto</NavItem>
    
